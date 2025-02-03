@@ -222,7 +222,6 @@ function renderAllShapes(){
     sendTexttoHTML(" ms:      " + Math.floor(duration) + "              FPS: " + Math.floor(10000 / duration), "numdot");
 }
 
-// let g_globalAngle = 0;
 let g_globalAngleX = 0;
 let g_globalAngleY = 0;
 
@@ -265,51 +264,6 @@ function sendTexttoHTML(text, htmlID) {
     }
     htmlElem.innerHTML = text;
 }
-
-var mouseDown = false;
-var lastMouseX = -1;
-var lastMouseY = -1;
-function handleMouseDown(event) {
-    if (event.target === canvas) {
-        mouseDown = true;
-        lastMouseX = event.clientX;
-        lastMouseY = event.clientY;
-    }
-}
-
-function handleMouseUp(event) {
-    if (mouseDown && event.target == canvas) {
-        mouseDown = false;
-    }
-}
-
-
-function handleMouseMove(event) {
-    const { clientX: newX, clientY: newY } = event;
-
-if (mouseDown) {
-    const deltaX = newX - lastMouseX;
-    const deltaY = newY - lastMouseY;
-
-    rotateModel(deltaX, deltaY);
-}
-
-lastMouseX = newX;
-lastMouseY = newY;
-
-}
-
-function rotateModel(deltaX, deltaY) {
-    g_globalAngleX += deltaX;
-    g_globalAngleY += deltaY;
-    g_globalAngleX = Math.max(Math.min(g_globalAngleX, 180), -180);
-    g_globalAngleY = Math.max(Math.min(g_globalAngleY, 90), -90);
-    document.getElementById('angleSlideX').value = g_globalAngleX;
-    document.getElementById('angleSlideY').value = g_globalAngleY;
-
-    renderAllShapes();
-}
-
 
 function main() {
     setupWebGL();
