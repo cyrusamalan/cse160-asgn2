@@ -1,3 +1,6 @@
+// Cyrus Amalan
+// camalan@ucsc.edu
+
 class Cube {
     constructor() {
         this.type = "cube";

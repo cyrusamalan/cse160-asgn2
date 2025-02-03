@@ -1,3 +1,6 @@
+// Cyrus Amalan
+// camalan@ucsc.edu
+
 class Tube {
     constructor(radius = 1, height = 1, segments = 36) {
         this.radius = radius;

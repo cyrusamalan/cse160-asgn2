@@ -1,3 +1,6 @@
+// Cyrus Amalan
+// camalan@ucsc.edu
+
 
 var VSHADER_SOURCE =`
   attribute vec4 a_Position;

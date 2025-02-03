@@ -1,3 +1,5 @@
+// Cyrus Amalan
+// camalan@ucsc.edu
 
 class Point {
     constructor() {

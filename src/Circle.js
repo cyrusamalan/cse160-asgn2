@@ -1,3 +1,6 @@
+// Cyrus Amalan
+// camalan@ucsc.edu
+
 class Circle {
     constructor() {
         this.type = 'circle'; // Type identifier for the shape

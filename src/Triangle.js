@@ -1,3 +1,6 @@
+// Cyrus Amalan
+// camalan@ucsc.edu
+
 class Triangle{
     constructor() {
         this.geometryType = "vertex";
