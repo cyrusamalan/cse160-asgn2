@@ -178,9 +178,9 @@ function renderAllShapes(){
    
 
     var tail = new Tube();
-    tail.height = 5;
+    tail.height = 3;
     tail.radius = 0.5;
-    tail.color = [0.95, 0.95, 0.95, 1.0];
+    tail.color = [0.55, 0.27, 0.07, 1.0];
     tail.matrix.translate(0.5, -0.175, 0.125);
     tail.matrix.scale(0.05, 0.15, 0.05);
     tail.matrix.rotate(-90, 1, 1, 0);
