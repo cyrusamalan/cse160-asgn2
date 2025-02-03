@@ -17,12 +17,12 @@ class Circle {
     
         const angleIncrement = 360 / this.segments; // Angle step for each segment
     
-        // Generate and draw triangles to approximate the circle
+        // Generate and draw triangles
         for (let angle = 0; angle < 360; angle += angleIncrement) {
             const radianStart = (angle * Math.PI) / 180; // Convert start angle to radians
             const radianEnd = ((angle + angleIncrement) * Math.PI) / 180; // Convert end angle to radians
     
-            // Compute triangle vertices
+            // Compute triangle
             const vertexA = [
                 centerX + Math.cos(radianStart) * radius,
                 centerY + Math.sin(radianStart) * radius
@@ -32,7 +32,7 @@ class Circle {
                 centerY + Math.sin(radianEnd) * radius
             ];
     
-            // Draw the triangle
+            // Draw triangle
             drawTriangle([
                 centerX, centerY, // Center vertex
                 vertexA[0], vertexA[1], // First outer vertex
