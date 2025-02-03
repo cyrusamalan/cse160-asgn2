@@ -161,7 +161,7 @@ function renderAllShapes(){
     var leftEar = new Cube();
     leftEar.color = [0.0, 0.0, 0.0, 1.0];
     leftEar.matrix = headCoor;
-    leftEar.matrix.translate(1.5, -10, 0.75);
+    leftEar.matrix.translate(-0.5, -15, 0.75);
     leftEar.matrix.scale(1, 0.5, 0.5);
     leftEar.matrix.scale(6,1,1)
     leftEar.matrix.rotate(0,0,0)
